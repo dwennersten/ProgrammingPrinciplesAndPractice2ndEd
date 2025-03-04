@@ -14,6 +14,11 @@
 - type(value) vs type{value} : both convert value to type, however type{value} prevents narrowing conversion where type(value) does not. 
 - expression statements - an expression followed by a semicolon (ex: ++a; x=4)
 - declaration statements - a declaration followed by a semicolon (ex: int x)
+- block - a compound statement delimited by curly braces
+- function - a named sequence of statements
+- function definition syntax - type identifier( parameter-list) function body
+- formal arguments - a parameter list
+- function declaration - 
 
 ## lvalue vs rvalue
 - if int length = 99
