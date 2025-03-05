@@ -6,4 +6,4 @@
 - "You don't demonstrate your cleverness by writing the most complex program.  Rather, you demonstrate competence by writing the simplest code that does the job." p.104
 - "never modify the loop variable inside the body of a for-statement.  that would violate every reader's reasonable assumption about what a loop is doing." p.112
 - "Programs are usually easier to write and to understand if each function performs a single logical action." p.116
-- 
+- Generally prefer for loops over while loops, as for loops are "easier to understand" p.122

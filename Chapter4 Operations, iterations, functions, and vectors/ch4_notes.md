@@ -18,7 +18,13 @@
 - function - a named sequence of statements
 - function definition syntax - type identifier( parameter-list) function body
 - formal arguments - a parameter list
-- function declaration - 
+- function declaration - declaring but not defining the behavior of a function. ex double sqrt(double);  
+    - always ends in a semicolon (like a replacement of the function body)
+- range-for-loop - for(int x: v) // means for all integers x in vector v
+- member function call - like v.size();
+- What is a benefit of reading input using a for loop instead of a while loop? 
+    - a for loop restricts the declared variable to the loop body.  A while loop has the value declared outside of the loop.
+
 
 ## lvalue vs rvalue
 - if int length = 99
@@ -39,3 +45,19 @@ Details about switch statements
 - you can use several case labels for a single case
 - every case needs to end in a break (or there will be fall through)
 - it's good coding practice to have a default case. 
+
+## Vector
+```cpp
+vector<int> v = {1,2,3,4,5};
+vector<int> v1(3); //vector of 3 ints initialized to 0.  Strings initialized to ""
+v.size() // returns the number of elements in the vector
+v.push_back(6) // v now contains a 6th element whose value is 6
+
+//Read input into a vector of temperatures
+vector<int> temps;
+for(int temp; cin>>temp;) //keeps reading until a non-int or error is encountered. temp is used for temporary here
+    temps.push_back(temp); //pushes the value to the end of the vector. 
+
+sort(temps) //sorts the temperatures
+
+```
